@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body { font-family: Arial, Helvetica, sans-serif; }
+
+h1, h3, form, p { padding: 10px; }
+
+h1 { 
+	background-color: #E7E7E7; 
+	font-family: "Times New Roman", Times, serif; 
+}
+
+table, td {
+	border: 3px solid;
+	text-align: center;	
+}
+
+td {
+	padding: 8px;
+}
+			
+th { 
+	color: #000A6E; 
+	text-align: center; 
+	font-weight: bold; 
+	padding: 8px;
+	border: 3px solid;
+}			
+
+#recordForm {
+	width: 80%;
+	max-width: 720px;
+	border-radius: 0.5rem;
+	background-color: gray;
+	box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+	margin: auto;
+	padding: 2.5rem;
+	display: block;
+}
+
+select {
+	font-size: 15px;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+
+#select {
+	padding: 20px;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	
+}
+
+input[type="submit"] {
+  display: block;
+  color: white;
+  background-color: rgb(13, 135, 13);
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  margin: 1em auto;
+  box-shadow: 0.5rem 0.5rem 2rem 0rem rgba(0, 0, 0, 24);
+  border: 0;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  margin: 0.75em auto;
+  background-color: rgb(37, 165, 37);
+  font-size: 1.7rem;
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.1rem 2rem 0.8rem rgba(0, 0, 0, 24);
+}
+
+input[type="submit"]:focus {
+  background-color: rgb(97, 205, 97);
+}

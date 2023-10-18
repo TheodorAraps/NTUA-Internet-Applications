@@ -1,0 +1,5 @@
+A
+100
+45.451
+Tue May 23 10:51:17 EEST 2023
+This is an example of the PrintStream class.

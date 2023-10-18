@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.h { 
+	color: green; 
+	text-align: center; 
+}
+
+.table, th, td{
+	padding: 25px;
+	border: 5px solid white;
+	background-color: black;
+	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 100px;
+}
+
+#sub1:hover {
+	cursor: pointer;
+	background-color: yellow;
+}
+
+#sub2:hover {
+	cursor: pointer;
+	background-color: red;
+}
+
+#sub3:hover {
+	cursor: pointer;
+	background-color: blue;
+}
+
+#sub4:hover {
+	cursor: pointer;
+	background-color: green;
+}
+
+#overlay {
+	border-radius: 25px;
+	position: fixed;
+	top: 25%;
+	left: 40%;
+	width: 500px;
+	height: 500px;
+	display: none;
+	cursor: pointer;
+	background-color: orange;
+	margin: auto;
+  	z-index: 2;
+  	opacity: 0.98;
+}
+
+#overlayText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 25px;
+	transform: translate(-50%,-50%);
+ 	-ms-transform: translate(-50%,-50%);
+}

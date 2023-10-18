@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+h1 { color: red; }
+
+.tableclass {
+	padding: 25px;
+	border: 10px solid gray;
+	background-color: yellow;
+}
+
+#button {
+	border: 5px solid black;
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-left: 50px;
+	padding: 15px;
+	width: 46px;
+}
+
+#button:hover {
+	cursor: pointer;
+	background-color: gray;
+}

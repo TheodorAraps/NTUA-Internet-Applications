@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="ISO-8859-1">
+	
+	<title>User Registration Page</title>
+	
+	<!-- Specify the CSS File -->
+	<link rel="stylesheet" type="text/css" href="CSS/WebApp.css" >
+	
+	<!-- Specify the JavaScript File -->
+	<script type="text/javascript" src="JS/WebApp.js"></script>
+	
+</head><body>
+
+	<h1>User Registration Page</h1>
+	
+	<p>Ensure that the <b>password</b> correctly typed twice.</p>
+	
+	<form action="CreateUserAccountServlet" method="POST">
+		<table class="logintable">
+			<tr>
+				<th>Username:</th>
+				<td> <input type="text" name="username"> </td>
+			</tr>
+			<tr>
+				<th>Password:</th>
+				<td> <input type="password" name="password"> </td>
+			</tr>
+			<tr>
+				<td colspan="4" >Please Enter Your Password Again</td>
+			</tr>
+			<tr>
+				<th>Password:</th>
+				<td> <input type="password" name="password2"> </td>
+			</tr>
+			<tr>
+				<td> <input type="reset" value="Reset" > </td>
+				<td> <input type="submit" value="Create Account"> </td>
+			</tr>
+		</table>
+	</form>
+
+</body></html>

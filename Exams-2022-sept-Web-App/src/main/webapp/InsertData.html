@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Exam 22 | Login Page</title>
+	
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function(event) {
+			
+			// Find Element by ID when DOM is ready
+			const checkButton = document.querySelector('#check'); 
+			
+			checkButton.addEventListener("click", function(){
+				const team1id = document.querySelector('#team1id').value; 
+				const team2id = document.querySelector('#team2id').value; 
+				if (team1id == team2id) alert("Your data are invalid !");
+				else alert("Your data are valid !");
+			})
+		})
+	</script>
+	<style>
+		body { font-family: Arial, Helvetica, sans-serif; }
+		h1, h3, form, p { padding: 10px; font-family: Arial, Helvetica, sans-serif; }
+		h1 { background-color: #E7E7E7; }
+		th { color: #000A6E; text-align:left; font-weight: bold; }
+		input, select, option { margin: 2px 4px; padding: 6px 12px; border-radius: 10px; font-size: 1.2em; }
+		#check { border: 1px solid black; border-radius: 5px; margin-top: 5px; padding: 5px; width: 200px; }
+		#check:hover { cursor: pointer; background-color: gray; }
+		
+	</style>
+	
+</head><body>
+
+	<h1>Exam - September 2022</h1>
+
+	<h3>Insert Data Page</h3>
+
+	<!-- Update action if being required -->
+	<form action="InsertDB" method="GET">
+		<table>
+			<tr>
+				<th>Date:</th>
+				<td colspan="2"> <input type="text" name="datestr" maxlength="10"> </td>
+				<th>Format: (DD-MM-YYYY)</th>
+			</tr>
+			<tr>
+				<th>Team 1:</th>
+				<td>
+					<select id="team1id" name="team1id">
+					  <option value="1">GREECE</option>
+					  <option value="2">ITALY</option>
+					  <option value="3">GERMANY</option>
+					</select>
+				</td>
+				<th>Score:</th>
+				<td> <input type="text" name="team1score"> </td>
+			</tr>
+			<tr> 
+				<th>Team 2:</th>
+				<td>
+					<select id="team2id" name="team2id">
+					  <option value="1">GREECE</option>
+					  <option value="2">ITALY</option>
+					  <option value="3">GERMANY</option>
+					</select>
+				</td>
+				<th>Score:</th>
+				<td> <input type="text" name="team2score"> </td>
+			</tr>
+			<tr>
+				<td colspan="2"> <div id="check">Check Button</div> </td>
+				<td colspan="2"> <input type="submit" value="Insert Data"> </td>
+			</tr>
+		</table>
+	</form>
+	
+	<!-- 
+		For ** Question (d) ** (data storage and table data retrieval) you need to create a Java Servlet.
+	-->
+
+</body></html>
